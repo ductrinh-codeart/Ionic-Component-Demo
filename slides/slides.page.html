@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-transform: capitalize;">slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      
+      <h1>Welcome to Slide</h1>
+      
+      <p>The Ionic conference app is a pretical preview of the ionic framework in action, and a desmonstration of proper code use. desmonstration of proper code use. desmonstration of proper code use.</p>
+       
+      
+    </ion-slide>
+    <ion-slide>
+      <h1>What is Ionic?</h1>
+      <p>Inoic Framework is an open source SDK that enables developers to build high qualati mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+    </ion-slide>
+    <ion-slide>
+      <h1>What is Appflow?</h1>
+      <p>Appflow is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
+    </ion-slide>
+    <ion-slide>
+      <section>
+
+
+        <ion-item>
+          <P>
+            The Action Sheet is a dialog that displays a set of options. 
+            It appears on top of the app’s content, and must be manually dismissed by the user 
+            before they can resume interaction with the app. 
+            There are multiple ways to dismiss the action sheet, including tapping the backdrop or 
+            hitting the escape key.
+          </P>
+        </ion-item>
+    
+        <ion-list>
+            <ion-item>
+            <a href="https://github.com/ionic-team/ionic-conference-app">
+                Ionic Angular Conference App
+            </a>
+          </ion-item>
+          <ion-item>
+            <a href="https://github.com/ionic-team/ionic-react-conference-app"> 
+                Ionic React Conference App
+            </a>
+          </ion-item>
+          <ion-item>
+            <a href="https://github.com/ionic-team/ionic-stencil-conference-app"> 
+                Ionic Stencil Conference App
+            </a>
+          </ion-item>
+      </ion-list>
+    
+      </section>
+      
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-transform: capitalize;">select</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Select Trip
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Origin</ion-label>
+      <ion-select placeholder="Select Airport">
+        <ion-select-option value="MSN">Madison (MSN)</ion-select-option>
+        <ion-select-option value="ORD">Chicago (ORD)</ion-select-option>
+        <ion-select-option value="AUS">Austin (AUS)</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Destination</ion-label>
+      <ion-select placeholder="Select Airport" value="Airport">
+        <ion-select-option value="JFK">New York (JFK)</ion-select-option>
+        <ion-select-option value="HNL">Honolulu</ion-select-option>
+        <ion-select-option value="BWI">Baltimore</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Passengers</ion-label>
+      <ion-select placeholder="1 Adult">
+        <ion-select-option checked value="1">1 Adults</ion-select-option>
+        <ion-select-option value="2">2 Adults</ion-select-option>
+        <ion-select-option value="3">3 Adults</ion-select-option>
+        <ion-select-option value="4">4 Adults</ion-select-option>
+          </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Add-ons</ion-label>
+      <ion-select multiple="true" placeholder="Select Multiple Add-ons">
+        <ion-select-option value="First Class">First Class</ion-select-option>
+        <ion-select-option value="Additional Bag">Additional Bag</ion-select-option>
+        <ion-select-option value="Head Phones">Head Phones</ion-select-option>
+        <ion-select-option value="Inflight Wifi">Inflight Wifi</ion-select-option>
+        </ion-select>
+    </ion-item>
+  
+  </ion-list>
+
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Select Interfaces
+      </ion-label>
+    </ion-list-header>
+  
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Popover Interface">
+        <ion-select-option checked value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mute Notifications</ion-label>
+      <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Action Sheet Interface">
+        <ion-select-option value="15mins">For 15 Minutes</ion-select-option>
+        <ion-select-option value="60mins">For 1 Hour</ion-select-option>
+        <ion-select-option value="24hours">For 24 Hours</ion-select-option>
+        <ion-select-option value="Until">Until I turn it back on</ion-select-option>
+        </ion-select>
+    </ion-item>
+  
+  </ion-list>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-transform: capitalize;">modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section>
+  
+  
+      <ion-item>
+        <P>
+          The Action Sheet is a dialog that displays a set of options. 
+          It appears on top of the app’s content, and must be manually dismissed by the user 
+          before they can resume interaction with the app. 
+          There are multiple ways to dismiss the action sheet, including tapping the backdrop or 
+          hitting the escape key.
+        </P>
+      </ion-item>
+  
+      <ion-list>
+          <ion-item>
+          <a href="https://ionicframework.com/docs/api/picker">
+              Picker API Docs
+          </a>
+        </ion-item>
+        <ion-item>
+          <a href="https://ionicframework.com/docs/components"> 
+              UI Component Docs
+          </a>
+        </ion-item>
+    </ion-list>
+  
+  
+  
+  
+  
+  <ion-padding >
+  <ion-button (click)="showPicker()" expand="block" style="padding: 0px 20px; height: 50px; font-size: 18px;" >OPEN SINGLE COLUMN PICKER</ion-button>
+  </ion-padding>
+  <ion-padding >
+  <ion-button (click)="showPickers()" expand="block" style="padding: 0px 20px; height: 50px; font-size: 18px;" >OPEN MULTIPLE COLUMNS PICKER</ion-button>
+  </ion-padding>
+  
+  </section>
+  
+  </ion-content>

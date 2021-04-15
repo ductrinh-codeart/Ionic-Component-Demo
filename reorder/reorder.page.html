@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <ion-button slot="end" (click)=toggleReorderGroup() >Toggle</ion-button>
+
+    <ion-title style="text-transform: capitalize;">reorder</ion-title>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+<ion-list-header>Reorder Icon</ion-list-header>
+  <ion-reorder-group>
+   <!-- Default reorder icon, end aligned items -->
+    <ion-item>
+      <ion-label>
+        Item 1
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Item 2
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Item 3
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Item 4
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  
+<ion-list-header>Custom Reorder Icon</ion-list-header>
+
+    <ion-item>
+      <ion-label>
+        Item 5
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Item 6
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Item 7
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+
+<ion-list-header>Reorder Icon</ion-list-header>
+
+    <ion-item>
+      <ion-label>
+        Item 8
+      </ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+
+
+  </ion-reorder-group>
+</ion-content>
