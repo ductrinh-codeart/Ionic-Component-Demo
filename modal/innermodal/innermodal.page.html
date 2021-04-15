@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="dismiss()" slot="start"> Cancel
+    </ion-button>
+    <ion-title style="text-transform: capitalize;">modal centent</ion-title>
+
+    <ion-fab horizontal="end" slot="end">
+      <ion-fab-button>
+        <ion-icon color="light" name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="start">
+        <ion-fab-button color="primary"><ion-icon  name="logo-vimeo"></ion-icon></ion-fab-button>
+        <ion-fab-button color="secondary"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+        <ion-fab-button color="light"><ion-icon color="dark" name="logo-google"></ion-icon></ion-fab-button>
+        <ion-fab-button color="dark"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label><h2>Gollum</h2><h3>Sneaky little hobbitses!</h3></ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label><h2>Frodo</h2><h3>Go back, Sam! I'm going to Mordor alGo back, Sam! I'm going to Mordor al</h3></ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label><h2>Samwise</h2><h3>What we need is a few good taters.</h3></ion-label>
+    </ion-item>
+    </ion-list>
+</ion-content>

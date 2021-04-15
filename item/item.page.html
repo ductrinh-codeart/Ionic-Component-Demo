@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-transform: capitalize;">item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list-header>
+    Icon Items
+  </ion-list-header>
+  
+  <ion-list>
+  <ion-item>
+    <ion-icon slot="start" name="star">
+    </ion-icon>
+    <ion-label>Label</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon slot="start" name="heart">
+    </ion-icon>
+    <ion-label>Label</ion-label>
+  </ion-item>
+  </ion-list>
+
+
+<ion-list-header>
+  Media Items
+</ion-list-header>
+
+<ion-list>
+<ion-item>
+  <ion-avatar slot="start">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-avatar>
+  <ion-label>Item Avatar</ion-label>
+</ion-item>
+<ion-item>
+  <ion-avatar slot="start">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-avatar>
+  <ion-label>Item Avatar</ion-label>
+</ion-item>
+</ion-list>
+
+<ion-list-header>
+  Sliding Items
+</ion-list-header>
+
+<ion-list>
+  <!-- Sliding item with text options on both sides -->
+  <ion-item-sliding>
+    <ion-item-options side="start">
+      <ion-item-option style="padding: 10px;" color="primary" (click)="archive(item)">ARCHIVE</ion-item-option>
+    </ion-item-options>
+
+    <ion-item>
+      <ion-label>Label</ion-label>
+    </ion-item>
+
+    <ion-item-options side="end">
+      <ion-item-option style="padding: 10px;" color="danger" (click)="delete(item)">DELETE</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+    <!-- Sliding item with text options on both sides -->
+    <ion-item-sliding>
+      <ion-item-options side="start">
+        <ion-item-option style="padding: 20px;" color="primary" (click)="archive(item)"><ion-icon name="archive"></ion-icon></ion-item-option>
+      </ion-item-options>
+  
+      <ion-item>
+        <ion-label>Label</ion-label>
+      </ion-item>
+  
+      <ion-item-options side="end">
+        <ion-item-option style="padding: 20px;" color="danger" (click)="delete(item)"><ion-icon name="trash"></ion-icon></ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-list-header>
+      Input & Controls
+    </ion-list-header>
+
+    <ion-list>
+     
+      <ion-item>
+        <ion-note slot="end">11</ion-note>
+        <ion-label>Note</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Checkbox</ion-label>
+        <ion-checkbox slot="end" checked="true"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Toggle</ion-label>
+        <ion-toggle checked slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>Input</ion-label>
+        <ion-input placeholder="placeholder" slot="end"></ion-input>
+      </ion-item>
+
+
+    </ion-list>
+
+
+
+  </ion-list>
+
+</ion-content>

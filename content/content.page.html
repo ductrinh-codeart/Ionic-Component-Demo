@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-transform: capitalize;">content</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+    <h1>Main Content</h1>
+
+    <ion-button onclick="scrollToBottom()" expand="block" fill="outline">SCROLL TO BOTTOM</ion-button>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>item 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 2</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 3</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 4</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 5</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 6</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 7</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 8</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 9</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 10</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 11</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 12</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 13</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 14</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 15</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 16</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 17</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 18</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 19</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 20</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 21</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 22</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 23</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 24</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 25</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 26</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 27</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 28</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 29</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>item 30</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button onclick="scrollToBottom()" expand="block" fill="outline">SCROLL TO TOP</ion-button>
+    
+</ion-content>

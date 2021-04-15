@@ -1,0 +1,42 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-transform: capitalize;">Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Home</ion-item>
+        <ion-item>Profile</ion-item>
+        <ion-item>Message</ion-item>
+        <ion-item>Setting</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+<ion-content>
+  
+
+
+  <ion-router-outlet id="main">
+    
+    <ion-button (click)="openFirst()" >Open Menu</ion-button>
+
+  </ion-router-outlet>
+    
+</ion-content>
+
